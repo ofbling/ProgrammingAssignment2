@@ -25,7 +25,7 @@ cacheSolve <- function(x, ...) {
     message("getting inverse of matrix")
     return(i)
   }
-  data <- x$get
+  data <- x$get()
   i <- solve(data)
   x$setinv(i)
   i
